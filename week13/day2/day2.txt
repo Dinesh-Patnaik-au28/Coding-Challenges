@@ -1,0 +1,41 @@
+Question 1. Write short note on Process Life cycle ?
+Process life cycle in OS is one of the five states in which a process can be starting from the time it has been submitted for execution,
+till the time when it has been executed by the system.
+A process can be in any of the following states – New state. Ready state. Running state.
+And the life-cycle of a process can be described by a state diagram which has states representing the execution status of the,
+process at various times and transitions that represent changes in execution status.
+The operating system maintains management information about a process in a process control block (PCB).
+
+Question 2. What role does an operating system perform. ?
+An operating system has three main functions:
+(1) manage the computer's resources, such as the central processing unit, memory, disk drives, and printers,
+(2) establish a user interface, and 
+(3) execute and provide services for applications software.
+An operating system (OS) is system software that manages computer hardware,
+software resources,and provides common services for computer programs.
+
+Question 3. What is a process ?
+A process is basically a program in execution. 
+The execution of a process must progress in a sequential fashion. 
+A process is defined as an entity which represents the basic unit of work to be implemented in the system
+In computing, a process is the instance of a computer program that is being executed by one or many threads.
+Depending on the operating system (OS), 
+a process may be made up of multiple threads of execution that execute instructions concurrently.
+And a process is basically a program in execution.
+The execution of a process must progress in a sequential fashion.
+A process is defined as an entity which represents the basic unit of work to be implemented in the system.
+
+Question 4. What is the job of a long term scheduler ?
+Long Term Scheduler
+A long-term scheduler determines which programs are admitted to the system for processing.
+It selects processes from the queue and loads them into memory for execution. Process loads into the memory for CPU scheduling.
+And a long-term scheduler determines which programs are admitted to the system for processing.
+ It selects processes from the queue and loads them into memory for execution.
+ Process loads into the memory for CPU scheduling.
+When a process changes the state from new to ready, then there is use of long-term scheduler.
+
+Question 5. What is Response time.
+Response time is the total amount of time it takes to respond to a request for service.
+That service can be anything from a memory fetch,
+to a disk IO, to a complex database query,
+or loading a full web page.

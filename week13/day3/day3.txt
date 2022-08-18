@@ -1,0 +1,38 @@
+Question 1. Write short note on CPU scheduling algorithms.
+CPU Scheduling is a process of determining which process will own CPU for execution while another process is on hold.
+The selection process will be carried out by the CPU scheduler.
+It selects one of the processes in memory that are ready for execution.
+AndCPU Scheduling Algorithm primarily used in multiprogramming operating system.
+To execute a process in the simple system, a process required Input-Output devices,
+resources and CPU time. If the process is dealing with I/O devices,
+the CPU will sit idle.
+
+Question 2. What is preemptive vs non preemptive scheduling algos.
+Key Differences Between Preemptive and Non-Preemptive Scheduling:
+In preemptive scheduling, the CPU is allocated to the processes for a limited time whereas,
+in Non-preemptive scheduling,
+the CPU is allocated to the process till it terminates or switches to the waiting state.
+Preemptive Scheduling:
+Preemptive Scheduling is a CPU scheduling technique that works by dividing time slots of CPU to a given process.
+The time slot given might be able to complete the whole process or might not be able to it.
+When the burst time of the process is greater than CPU cycle,
+it is placed back into the ready queue and will execute in the next chance.
+This scheduling is used when the process switch to ready state.
+Algorithms that are backed by preemptive Scheduling are round-robin (RR), priority, SRTF (shortest remaining time first).
+Non_preemptive Scheduling:
+Non-preemptive Scheduling is a CPU scheduling technique the process takes the resource (CPU time) and holds it till the,
+process gets terminated or is pushed to the waiting state.
+No process is interrupted until it is completed, and after that processor switches to another process.
+Algorithms that are based on non-preemptive Scheduling are non-preemptive priority, and shortest Job first.
+
+Question 3. Write the best and/or practical scheduling algo, with reason ?
+Round Robin(RR) scheduling algorithm is mainly designed for time-sharing systems. This algorithm
+is similar to FCFS scheduling,
+but in Round Robin(RR) scheduling,
+preemption is added which enables the system to switch between processes.
+The reason are:
+*A fixed time is allotted to each process, called a quantum, for execution.
+*Once a process is executed for the given time period that process is preempted and another process executes for the given time period.
+*Context switching is used to save states of preempted processes.
+*This algorithm is simple and easy to implement and the most important is thing is this algorithm is starvation-free as all processes get a fair share of CPU.
+*It is important to note here that the length of time quantum is generally from 10 to 100 milliseconds in length.

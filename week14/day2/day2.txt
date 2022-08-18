@@ -1,0 +1,53 @@
+Q-1 ) Briefly describe CAP theorem.
+The CAP theorem (also called Brewer's theorem) states that a distributed database system can only guarantee two out of these three characteristics:
+Consistency, Availability, and Partition Tolerance consistency. 
+A system is said to be consistent if all nodes see the same data at the same time.
+A distributed database system is bound to have partitions in a real-world system due to network failure or some other reason.
+
+Q-2) Explain DHCP, ARP and NAT.
+D.H.C.P:
+Dynamic Host Configuration Protocol (DHCP) is a client/server protocol that automatically provides, 
+An Internet Protocol (IP) host with its IP address and other related configuration information such as the subnet mask and default gateway.
+
+A.R.P:
+Address Resolution Protocol (ARP) is a procedure for mapping a dynamic IP address to a permanent physical machine address in a local area network (LAN).
+The physical machine address is also known as a media access control (MAC) address.
+The MAC address exists on Layer 2 of the OSI model, the data link layer.
+
+N.A.T:
+Network address translation (NAT) is a method of mapping an IP address space into another by modifying network address information in the IP header,
+of packets while they are in transit across a traffic routing device.
+1* The technique was originally used to avoid the need to assign a new address to every host when a network was moved, 
+or when the upstream Internet service provider was replaced, but could not route the network's address space.
+It has become a popular and essential tool in conserving global address space in the face of IPv4 address exhaustion.
+One Internet-routable IP address of a NAT gateway can be used for an entire private network.
+2*As network address translation modifies the IP address information in packets,
+NAT implementations may vary in their specific behavior in various addressing cases and their effect on network traffic.
+The specifics of NAT behavior are not commonly documented by vendors of equipment containing NAT implementations.
+
+Q-3) Longest Palindrome (5 marks)
+#https://leetcode.com/problems/longest-palindrome/
+#(Easy)
+#Given a string s which consists of lowercase or uppercase letters, return the
+#length of the longest palindrome that can be built with those letters.
+#Letters are case sensitive, for example, "Aa" is not considered a palindrome
+#here.
+#Example 1:
+#Input: s = "abccccdd"
+#Output: 7
+#Explanation:
+#One longest palindrome that can be built is "dccaccd", whose length is 7.
+ANS:
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        ans = 0
+        for i in collections.Counter(s).values():
+            if not(ans & 1 == 1 and (i & 1 == 1)):
+                ans += i
+            else:
+                if i > 1:
+                    ans += i-1
+        
+        return ans
+
+

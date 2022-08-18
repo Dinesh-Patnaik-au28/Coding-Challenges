@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+#mypage {
+    margin: 50px 80px 50px 80px;
+    border: 2px solid #DAB88B;
+    background-color: #EBD671;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    margin-top: 50px;
+}
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px; 
+}
+#aboutme {
+    padding-top: 10px;
+    margin-left: 10px;
+    color: #180A0A;
+}
+#book {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mydescription {
+    border: #011e20 solid;
+    margin: 50px 80px 50px 80px;
+    border-radius: 25px;
+    background-color: #85F4FF;
+}
